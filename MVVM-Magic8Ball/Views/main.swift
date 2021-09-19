@@ -30,7 +30,7 @@ while true {
     let input = readLine()!
     print("")
 
-    // Provide the advice by making an instance of the Magic8Ball type and then getting a response
+    // Provide the advice by using the view model
     print(advisor.provideResponseFor(givenQuery: input))
     
     // Ask whether the user wants to continue or see history of advice
