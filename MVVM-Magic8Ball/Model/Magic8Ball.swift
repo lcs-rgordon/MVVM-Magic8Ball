@@ -9,8 +9,11 @@ import Foundation
 
 struct Magic8Ball {
     
-    // Open Library
-    // Command-Shift-L
+    // Provides a random response to the user's question
+    // NOTE: Since the method is 'static' no instance of Magic8Ball
+    //       needs to be created to invoke the method.
+    //       Essentially, a static method inside a structure is just
+    //       an approach for tucking away some funtionality.
     static func getResponse() -> String {
         
         let responses = [
