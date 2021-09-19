@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct Session {
+struct Session: Identifiable {
+    
+    // Unique identifier for each session
+    let id = UUID()
     
     // Question that the user asks, must be set to start an advice session
     let question: String

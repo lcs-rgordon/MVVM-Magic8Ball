@@ -15,6 +15,9 @@
 		0E8612E526F7C9C700876790 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8612E426F7C9C700876790 /* ContentView.swift */; };
 		0E8612E726F7C9C900876790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E8612E626F7C9C900876790 /* Assets.xcassets */; };
 		0E8612EA26F7C9C900876790 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E8612E926F7C9C900876790 /* Preview Assets.xcassets */; };
+		0EDDE77326F7E3E800DBA297 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59619526F4EFF2007C535B /* Magic8Ball.swift */; };
+		0EDDE77426F7E3E800DBA297 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59619726F4F314007C535B /* Session.swift */; };
+		0EDDE77526F7E3E800DBA297 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59619B26F4F5FC007C535B /* AdviceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E59618A26F4ED23007C535B /* MVVM-Magic8Ball */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MVVM-Magic8Ball"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E59618A26F4ED23007C535B /* macOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = macOS; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E59618D26F4ED23007C535B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0E59619526F4EFF2007C535B /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
 		0E59619726F4F314007C535B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -73,7 +76,7 @@
 		0E59618B26F4ED23007C535B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E59618A26F4ED23007C535B /* MVVM-Magic8Ball */,
+				0E59618A26F4ED23007C535B /* macOS */,
 				0E8612E026F7C9C700876790 /* iOS.app */,
 			);
 			name = Products;
@@ -151,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0E59618926F4ED23007C535B /* MVVM-Magic8Ball */ = {
+		0E59618926F4ED23007C535B /* macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E59619126F4ED23007C535B /* Build configuration list for PBXNativeTarget "MVVM-Magic8Ball" */;
+			buildConfigurationList = 0E59619126F4ED23007C535B /* Build configuration list for PBXNativeTarget "macOS" */;
 			buildPhases = (
 				0E59618626F4ED23007C535B /* Sources */,
 				0E59618726F4ED23007C535B /* Frameworks */,
@@ -163,9 +166,9 @@
 			);
 			dependencies = (
 			);
-			name = "MVVM-Magic8Ball";
+			name = macOS;
 			productName = "MVVM-Magic8Ball";
-			productReference = 0E59618A26F4ED23007C535B /* MVVM-Magic8Ball */;
+			productReference = 0E59618A26F4ED23007C535B /* macOS */;
 			productType = "com.apple.product-type.tool";
 		};
 		0E8612DF26F7C9C700876790 /* iOS */ = {
@@ -216,7 +219,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E59618926F4ED23007C535B /* MVVM-Magic8Ball */,
+				0E59618926F4ED23007C535B /* macOS */,
 				0E8612DF26F7C9C700876790 /* iOS */,
 			);
 		};
@@ -250,6 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDDE77326F7E3E800DBA297 /* Magic8Ball.swift in Sources */,
+				0EDDE77426F7E3E800DBA297 /* Session.swift in Sources */,
+				0EDDE77526F7E3E800DBA297 /* AdviceViewModel.swift in Sources */,
 				0E8612E526F7C9C700876790 /* ContentView.swift in Sources */,
 				0E8612E326F7C9C700876790 /* iOSApp.swift in Sources */,
 			);
@@ -470,7 +476,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E59619126F4ED23007C535B /* Build configuration list for PBXNativeTarget "MVVM-Magic8Ball" */ = {
+		0E59619126F4ED23007C535B /* Build configuration list for PBXNativeTarget "macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E59619226F4ED23007C535B /* Debug */,
