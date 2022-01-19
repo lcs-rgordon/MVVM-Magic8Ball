@@ -22,7 +22,7 @@
 		0EECCB3226F7EC830091B3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EECCB3126F7EC830091B3A3 /* Assets.xcassets */; };
 		0EECCB3826F7EC830091B3A3 /* watchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0EECCB3726F7EC830091B3A3 /* watchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0EECCB3D26F7EC830091B3A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECCB3C26F7EC830091B3A3 /* ContentView.swift */; };
-		0EECCB3F26F7EC830091B3A3 /* MVVM_Magic8BallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECCB3E26F7EC830091B3A3 /* MVVM_Magic8BallApp.swift */; };
+		0EECCB3F26F7EC830091B3A3 /* watchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECCB3E26F7EC830091B3A3 /* watchOSApp.swift */; };
 		0EECCB4126F7EC830091B3A3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECCB4026F7EC830091B3A3 /* ComplicationController.swift */; };
 		0EECCB4326F7EC840091B3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EECCB4226F7EC840091B3A3 /* Assets.xcassets */; };
 		0EECCB4626F7EC840091B3A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EECCB4526F7EC840091B3A3 /* Preview Assets.xcassets */; };
@@ -98,7 +98,7 @@
 		0EECCB3126F7EC830091B3A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EECCB3726F7EC830091B3A3 /* watchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EECCB3C26F7EC830091B3A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0EECCB3E26F7EC830091B3A3 /* MVVM_Magic8BallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_Magic8BallApp.swift; sourceTree = "<group>"; };
+		0EECCB3E26F7EC830091B3A3 /* watchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchOSApp.swift; sourceTree = "<group>"; };
 		0EECCB4026F7EC830091B3A3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		0EECCB4226F7EC840091B3A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EECCB4526F7EC840091B3A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -234,8 +234,8 @@
 		0EECCB3B26F7EC830091B3A3 /* watchOS WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				0EECCB3C26F7EC830091B3A3 /* ContentView.swift */,
-				0EECCB3E26F7EC830091B3A3 /* MVVM_Magic8BallApp.swift */,
+				0EECCB3E26F7EC830091B3A3 /* watchOSApp.swift */,
+				81CC16E527983175002471BD /* Views */,
 				0EECCB4026F7EC830091B3A3 /* ComplicationController.swift */,
 				0EECCB4226F7EC840091B3A3 /* Assets.xcassets */,
 				0EECCB4726F7EC840091B3A3 /* Info.plist */,
@@ -250,6 +250,14 @@
 				0EECCB4526F7EC840091B3A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81CC16E527983175002471BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EECCB3C26F7EC830091B3A3 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,7 +356,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					0E59618926F4ED23007C535B = {
 						CreatedOnToolsVersion = 13.0;
@@ -457,7 +465,7 @@
 				0EECCB5A26F7F22D0091B3A3 /* Session.swift in Sources */,
 				0EECCB5B26F7F22D0091B3A3 /* AdviceViewModel.swift in Sources */,
 				0EECCB3D26F7EC830091B3A3 /* ContentView.swift in Sources */,
-				0EECCB3F26F7EC830091B3A3 /* MVVM_Magic8BallApp.swift in Sources */,
+				0EECCB3F26F7EC830091B3A3 /* watchOSApp.swift in Sources */,
 				0EECCB4126F7EC830091B3A3 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +604,7 @@
 		0E59619226F4ED23007C535B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7DL9Y9A7R;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -607,6 +616,7 @@
 		0E59619326F4ED23007C535B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7DL9Y9A7R;
 				ENABLE_HARDENED_RUNTIME = YES;
